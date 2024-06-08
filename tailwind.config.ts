@@ -20,14 +20,16 @@ const config = {
       lg: '968px',
       xl: '1200px',
     },
-    fontFamily:{
+    fontFamily: {
       primary: "var(--font-jetbrainsMono)",
     },
     extend: {
       colors: {
         primary: '#1c1c22',
-        accent:{
-          DEFAULT:"#00ff99",
+        accent: {
+          DEFAULT: "#00ff99",
+          // DEFAULT:"#45b3e0",
+          // DEFAULT: "#1fbdd2",
           hover: "#00e187",
         }
       },
