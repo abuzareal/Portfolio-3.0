@@ -4,12 +4,56 @@
     {
       "src": "*.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "userAsset/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "stack/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Images/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/styles.css",
-      "dest": "/styles.css"
+      "dest": "/styles.css",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/userAsset/(.*)",
+      "dest": "/userAsset/$1",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/stack/(.*)",
+      "dest": "/stack/$1",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "src": "/Images/(.*)",
+      "dest": "/Images/$1",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
     },
     {
       "src": "/(.*)",
