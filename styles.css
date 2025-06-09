@@ -27,8 +27,6 @@
   height: 100vh;
   background-color: black;
   position: relative;
-
-  /* width: 100vw; dont do this*/
   overflow-y: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -543,12 +541,9 @@ a {
 
 .frontSide,
 .frontSide::before {
-
-  background-image: url("/userAsset/abuzar_homepage.jpg");
-  background-size: cover;
-  background-position: center;
-
-  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
+    background-image: url("/assets/user/abuzar_homepage.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .backSide,
@@ -743,23 +738,23 @@ a {
 }
 
 #project1 {
-  background-image: url(./projects/netflix.jpg);
+  background-image: url(/assets/projects/netflix.jpg);
   right: 5%;
   margin-top: 5rem;
 }
 
 #project2 {
-  background-image: url(/userAsset/Starboard.png);
+  background-image: url(/assets/projects/Starboard.png);
   left: 5%;
 }
 
 #project3 {
-  background-image: url(/userAsset/covid.png);
+  background-image: url(/assets/projects/covid.png);
   right: 5%;
 }
 
 #project4 {
-  background-image: url(/projects/Project4.png);
+  background-image: url(/assets/projects/Project4.png);
   left: 5%;
 }
 
@@ -1562,7 +1557,7 @@ a {
 }
 
 .ft-grad {
-  background-image: url(./stack/footer-gradient.svg);
+  background-image: url(./assets/tech-stack/footer-gradient.svg);
   filter: opacity(90%);
   filter: contrast(125%);
   opacity: 70%;
