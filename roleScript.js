@@ -1,14 +1,13 @@
 var typeData = new Typed(".role", {
   strings: [
-    "a Full Stack Developer",
-    "a Team Lead",
-    "a MERN Stack Expert",
-    "a React.js Developer",
-    "a Node.js Developer",
     "ABUZAR TAMBOLI",
+    "a Full Stack Developer",
+    "a MERN Stack Magician",
+    "a React.js Wizard",
+    "a Team Leader",
   ],
   loop: true,
-  typeSpeed: 100,
-  backSpeed: 80,
-  backDelay: 1000,
+  typeSpeed: 50,
+  backSpeed: 40,
+  backDelay: 500,
 });
