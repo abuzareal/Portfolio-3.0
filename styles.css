@@ -1340,273 +1340,208 @@ a {
 /* ==============================form Section Start ================================================*/
 
 .contactSection {
-  /* background-color: rgb(31, 31, 31); */
-  /* background-image: url(./stack/connect.png); */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  /* height: 650px; */
-  /* margin-top: 7rem; */
+  position: relative;
+  padding: 100px 0;
+  background-color: #000;
+  overflow: hidden;
 }
 
 .contactGrad {
-  /* background-color: rgba(255, 0, 0, 0.14); */
-  background: linear-gradient(rgb(0, 0, 0), rgba(8, 8, 8, 0.8), rgba(8, 8, 8, 0.75), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), rgba(8, 8, 8, 0.433), black);
-  height: 100%;
+  position: absolute;
   width: 100%;
-  padding-top: 5rem;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at center, rgba(232, 73, 73, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  pointer-events: none;
 }
-
 
 .upper {
-  /* padding-top: 3.5rem; */
-  padding-bottom: 3rem;
-  /* background: linear-gradient(43deg, rgb(65, 88, 208) 30%, rgb(200, 80, 192) 40%, rgb(255, 204, 112) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  color: rgb(235, 196, 247);
-  text-shadow: 0 0 10px #a101a1, 0 0 20px #a002a0, 0 0 40px #a802a8;
-  width: 100%;
-  font-size: 50px;
   text-align: center;
-}
-
-.upper p {
-  font-weight: 300;
-  display: inline-block;
+  margin-bottom: 60px;
 }
 
 .upper h3 {
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-.lower {
-  display: flex;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  padding-bottom: 8rem;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.left_img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-}
-
-.left_img>img {
-  width: 80%;
-  /* filter: drop-shadow(10px 10px 60px #2802a6); */
-}
-
-.right>form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(11px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 60px rgba(8, 7, 16, 0.662);
-  border-radius: 20px;
-  padding: 12px;
-  min-width: 500px;
-  /* border: dotted 3px rgb(238, 181, 245); */
-  /* border-image: linear-gradient(145deg, transparent 35%,#e81cff, #40c9ffb6) 30; */
-}
-
-input,
-textarea {
-  /* background-color: rgba(7, 0, 15, 0.136); */
-  background-color: rgba(255, 255, 255, 0.07);
-  border: solid 1px rgb(165, 165, 165);
-  padding: 5px 9px;
-  min-width: 100%;
-  min-height: 40px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-}
-
-/* input:focus, textarea:focus{
-  outline: none;
-  border-color: rgb(238, 181, 245);
-} */
-
-::placeholder {
-  color: #e5e5e5d6;
-}
-
-.send-btn {
-  font-size: 16px;
-  background-image: linear-gradient(135deg, #7b4397, #dc2430);
-  color: rgb(235, 181, 245);
-  border: 2px solid rgb(238, 181, 245);
-  padding: 0.5rem 1.3rem;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-
-.send-btn span {
-  margin-left: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.send-btn svg {
-  display: block;
-  /* transform-origin: center center; */
-  /* transition: transform 0.3s ease-in-out; */
-  transition: 0.3s;
-  transform: scale(0.9);
-}
-
-.send-btn:hover svg {
-  transform: translateX(1.2rem) rotate(45deg) scale(1.2);
-}
-
-.send-btn:hover span {
-  transform: translateX(5rem);
-}
-
-.send-btn:active {
-  transform: scale(0.95);
-}
-
-@media (max-width:900px) {
-  .upper {
-    font-size: 40px;
-  }
-
-  .left_img {
-    display: none;
-  }
-
-  .right>form {
-    min-width: 80vw;
-    max-width: 450px
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.footer {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: black;
-}
-
-.ft-grad {
-  background-image: url(./stack/footer-gradient.svg);
-  filter: opacity(90%);
-  filter: contrast(125%);
-  opacity: 70%;
-  background-position: bottom;
-  background-size: cover;
-  padding-top: 120px;
-}
-
-.secondLast {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  z-index: 100;
-}
-
-.secondLast>a>h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  background: linear-gradient(45deg, #e84949, #ff6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 800;
 }
 
-.secondLast>p {
-  font-size: 0.9rem;
-  color: rgba(238, 232, 232, 0.673);
-  font-weight: 900;
-}
-
-.last-links {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.last-quote {
-  display: flex;
-  margin-top: 2rem;
-  gap: 1.2rem;
-  height: 20px;
-  margin-top: 5rem;
-}
-
-.last-quote>.left-border {
-  transform: rotateY(180deg);
-}
-
-.last-quote .left-border,
-.right-border {
-  opacity: 20%;
-  margin-top: 4px;
-}
-
-.last-quote>p {
-  color: #ffffff;
-  opacity: 20%;
-  text-align: center;
-  font-size: small;
-  font-weight: 500;
-  text-transform: lowercase;
-}
-
-.copyright {
-  background-color: rgba(16, 16, 16, 0.243);
-  display: flex;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  max-width: 1400px;
+.upper p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
-.copyright p {
-  font-size: 0.7rem;
-  color: gray;
-} */
+.contact-actions {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  box-shadow: 
+    0 20px 80px rgba(96, 165, 250, 0.4),
+    0 12px 48px rgba(59, 130, 246, 0.3),
+    0 6px 24px rgba(30, 58, 138, 0.2);
+}
+
+.contact-actions::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 35%, #3b82f6 70%, #60a5fa 100%);
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.email-container:hover {
+  transform: translateY(-5px);
+}
+
+.email-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #e84949, #ff6b6b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.email-icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.email-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 5px;
+}
+
+.email-address {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email-address:hover {
+  color: #e84949;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.linkedin-btn::before {
+  background: linear-gradient(45deg, #1e40af, #3b82f6, #60a5fa);
+}
+
+.download-btn::before {
+  background: linear-gradient(45deg, #ea580c, #f97316, #fb923c);
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+}
+
+.linkedin-btn:hover {
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+}
+
+.download-btn:hover {
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.4);
+}
+
+.contact-btn i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-btn:hover i {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  .contact-actions {
+    padding: 20px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .email-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .email-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 
 
 
@@ -1681,6 +1616,7 @@ textarea {
   gap: 1.2rem;
   height: 20px;
   margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 
 .last-quote>.left-border {
@@ -1874,8 +1810,32 @@ textarea {
     padding: 20px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
     transition: all 0.3s ease;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+}
+
+/* Alternative method using border-image (simpler but less flexible) */
+.timeline-content-alt {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%) 1;
+    transition: all 0.3s ease;
+    /* Note: border-image doesn't work with border-radius */
 }
 
 .timeline-content:hover {
