@@ -336,6 +336,28 @@ a {
   font-weight: 800;
 }
 
+.funny-part {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  color: #ff8c00;
+  display: inline-block;
+  margin-left: 5px;
+  animation: floatFade 1.2s ease-in-out;
+}
+
+/* Optional fun animation */
+@keyframes floatFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -1319,7 +1341,7 @@ a {
 
 .contactSection {
   /* background-color: rgb(31, 31, 31); */
-  background-image: url(./stack/connect.png);
+  /* background-image: url(./stack/connect.png); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1785,15 +1807,35 @@ textarea {
 
 /* Experience Section */
 .experienceSection {
-    padding: 80px 0;
+    /* padding: 80px 0; */
     position: relative;
 }
 
 .sectionTitle {
     color: #fff;
-    font-size: 2.5rem;
+    /* font-size: 2rem; */
     margin-bottom: 40px;
     text-align: center;
+    padding-top: 6rem;
+  /* color: rgb(255, 255, 255);  
+  text-shadow: 0 0 10px #a101a1, 0 0 20px #a002a0, 0 0 40px #a802a8; */
+
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  /* -webkit-text-stroke: 0.4px rgb(188, 12, 223); */
+  font-weight: 700;
+  font-size: 60px;
+  /* line-height: 75px; */
+  /* padding: 50px 0 30px; */
+  text-align: center;
+  color: rgb(235, 196, 247);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .timeline {
