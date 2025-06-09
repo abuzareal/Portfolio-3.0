@@ -500,7 +500,7 @@ a {
 
 .frontSide,
 .frontSide::before {
-  background-image: url("/assets/user/abuzar_homepage.jpg");
+  background-image: url("/assets/user/traditional.jpg");
   background-size: cover;
   background-position: center;
 }
