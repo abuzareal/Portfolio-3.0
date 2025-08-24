@@ -32,9 +32,57 @@
 
 
     <meta name="theme-color" content="#000000">
+    <style>
+        @media (max-width: 768px) {
+
+            body,
+            html {
+                background: #000 !important;
+                color: #fff !important;
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .mobile-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #000;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 99999;
+                font-size: 2rem;
+                font-family: inherit;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .wrapper,
+            nav,
+            section,
+            footer,
+            .outerSectionDiv,
+            .hero,
+            .projectSection,
+            .skillContainer,
+            .experienceSection,
+            .contactSection {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="mobile-overlay">Open on a desktop.<br /> <br /> I don't have time for mobile responsiveness.<br />  I have a life.
+    </div>
     <div class="wrapper">
         <nav class="navbar">
             <a href="/">
